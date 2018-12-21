@@ -1,7 +1,7 @@
 FROM odoo:12
 
 USER root
-#RUN pip3 install pysftp
+RUN pip3 install pysftp
 ENV ODOO_VERSION 12.0
 ENV ODOO_RELEASE latest
 RUN set -x; \
