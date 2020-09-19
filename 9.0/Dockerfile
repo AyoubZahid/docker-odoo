@@ -4,7 +4,7 @@ FROM odoo:9
 USER root
 
 RUN set -x; \
-        curl -o odoo.deb -SL https://nightly.odoo.com/9.0/nightly/deb/odoo_9.0c.20190201_all.deb  \
+        curl -o odoo.deb -SL https://nightly.odoo.com/9.0/nightly/deb/odoo_9.0c.latest_all.deb  \
         && dpkg --force-depends -i odoo.deb \
         && rm odoo.deb
 
